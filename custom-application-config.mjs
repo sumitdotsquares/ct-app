@@ -12,7 +12,7 @@ const config = {
       initialProjectKey: '${env:CTP_INITIAL_PROJECT_KEY}',
     },
     production: {
-      applicationId: 'TODO',
+      applicationId: 'clcyqt66u0002xa01fcqzhfr8',
       url: 'https://ds-ct-app.onrender.com',
     },
   },
