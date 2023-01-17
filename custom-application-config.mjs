@@ -5,15 +5,15 @@ import { PERMISSIONS, entryPointUriPath } from './src/constants';
  */
 const config = {
   name: 'Custom Application Template Starter',
-  entryPointUriPath,
+  entryPointUriPath: 'ct-app',
   cloudIdentifier: 'gcp-eu',
   env: {
     development: {
       initialProjectKey: '${env:CTP_INITIAL_PROJECT_KEY}',
     },
     production: {
-      applicationId: 'clcyqt66u0002xa01fcqzhfr8',
-      url: 'https://ds-ct-app.onrender.com',
+      applicationId: 'clcyw01z8001hwk01fxphyeri',
+      url: 'https://commercetools.24livehost.com/public/',
     },
   },
   oAuthScopes: {
