@@ -13,7 +13,7 @@ const config = {
     },
     production: {
       applicationId: 'clcyw01z8001hwk01fxphyeri',
-      url: 'https://commercetools.24livehost.com/public/',
+      url: 'https://63cbbf45431b305698db481a--celebrated-kelpie-e7f3cb.netlify.app/',
     },
   },
   oAuthScopes: {
@@ -30,6 +30,12 @@ const config = {
     {
       uriPath: 'channels',
       defaultLabel: 'Channels',
+      labelAllLocales: [],
+      permissions: [PERMISSIONS.View],
+    },
+    {
+      uriPath: 'test',
+      defaultLabel: 'Test',
       labelAllLocales: [],
       permissions: [PERMISSIONS.View],
     },
