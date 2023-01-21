@@ -1,58 +1,43 @@
-## React Food Delivery Web Application built using React-Redux-Axios
-<br/>
-<p align="center">
-  <img src="https://img.shields.io/badge/react-16.4.2-orange.svg">
-  <img src="https://img.shields.io/badge/redux-4.0.0-orange.svg">
-  <img src="https://img.shields.io/github/last-commit/google/skia.svg">
-  <img src="https://img.shields.io/badge/material%20react--lightgrey.svg">
-  <img src="https://img.shields.io/badge/mit%20-license-brightgreen.svg">
-  <br/>
-  <img src="./foodDelivery.gif">
-</p>
-
-## [Demo](https://react-food-delivery.herokuapp.com/)
-
-React Food Delivery app enables simplified responsive UI using react-redux combinations.
+# Book-CRUD-App
+✨CRUD✨
+---
 
 
-#### Features
-- Skeleton Screen implementation before loading the products.
-- Chat bot - helps user in fetching the best price available,calories counter etc..
-- Filter products by Food Name.
-- User Login and Address Forms with customized form validations.
-- Add to cart,compute total price and display each food item details.
-- Responsive Design suitable for all the devices.
-- Fetch data from jsonurl's using Axios.
+💻BOOK-MANAGEMENT ✈️
+---
 
-#### Technology Stack
+💫Tech & Tools Used :
+---
 
-- React 16.4.2
-- Redux 4.0.0
-- React Material
-- CSS,HTML5
-- [ChatBot](https://github.com/LucasBassetti/react-simple-chatbot)
-- Axios - for promise HTTP requests
+For Frontend : HTML5, CSS3, Javascript, JS6, ReactJS Redux.
 
-## Detailed Steps - Introduction
+For database: Json Server .
 
-### Installation
+For authentication: Reqres authentication.
 
-Execute the following command -
+---
+Steps to run the project locally:-
+1. Clone the code from github
+2. Run 'npm install' 
+3. Run `npm run server` (for using JSON-server locally)
+4. Run 'npm start'
+5. Enjoy! 
 
-npm install
-```
-npm start
-```
-Application starts running on `http://localhost:3000`
+---
+### Landing UI
+![Screenshot 2023-01-06 171834](https://user-images.githubusercontent.com/103638279/211008440-c84268d4-008e-4f87-b8dc-a5e27b8cd181.png)
 
-<br/>
+### Filter & Sorting & useSearchParams
+![Screenshot 2023-01-06 171915](https://user-images.githubusercontent.com/103638279/211008545-6ff70e71-744d-4626-9f6f-b202bfed898f.png)
 
-### Copyright and license
-The MIT License (MIT)
+### Login / Authentication Page
+![Screenshot 2023-01-06 172008](https://user-images.githubusercontent.com/103638279/211008656-8004eded-ce15-4a19-a30a-37944549a511.png)
 
+### Single Book Page
+![Screenshot 2023-01-06 172046](https://user-images.githubusercontent.com/103638279/211008689-39caa22a-cce4-4f28-a0aa-0cf17910b555.png)
 
-<br/>
+### Edit Page
+![Screenshot 2023-01-06 172136](https://user-images.githubusercontent.com/103638279/211008752-bb853994-f642-4ea5-b78b-da2be892b11a.png)
 
-<p align="center">
-<sub>Thank you, Sai Prasanna Krishna</sub>
-</p>
+----
+<h1 align="center">✨Thank You✨</h1>

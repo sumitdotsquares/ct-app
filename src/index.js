@@ -1,25 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import 'typeface-roboto';
-import App from './Containers/App';
-import registerServiceWorker from './registerServiceWorker';
-import {Provider} from 'react-redux';
-import {createStore,applyMiddleware} from 'redux';
-import reducer from './store/reducers/reducer';
-import thunk from 'redux-thunk';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import { store } from "./Redux/store";
+import { BrowserRouter } from "react-router-dom";
 
-const logger = store =>{
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>
+);
 
-    return next => {
-        return action => {
-            const result=next(action);
-            return result;
-        }
-    };
-}
-
-const store = createStore(reducer,applyMiddleware(logger,thunk));
-
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
-registerServiceWorker();
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
