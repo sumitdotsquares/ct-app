@@ -13,7 +13,7 @@ const config = {
     },
     production: {
       applicationId: 'clcyw01z8001hwk01fxphyeri',
-      url: 'https://celebrated-kelpie-e7f3cb.netlify.app/public',
+      url: 'https://63cbd2ffcf78ab6b5da88301--celebrated-kelpie-e7f3cb.netlify.app/public',
     },
   },
   oAuthScopes: {
