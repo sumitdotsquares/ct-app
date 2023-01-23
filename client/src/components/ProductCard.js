@@ -73,13 +73,13 @@ export default function ProductCard(props) {
         <>
             <div className="col">
                 <div style={styles.card} className="h-100" onClick={handleShow}>
-                    <img alt="product" src={props.product.masterData.current.masterVariant.images[0]?.url} className="w-100" style={styles.img} />
+                    <img alt="product" src={props.product.masterData.current.masterVariant.images[0].url} className="w-100" style={styles.img} />
                     <div className="card-body" style={{paddingBottom:0}}>
                         <h5 style={styles.name}>
                             {props.product.masterData.current.name['en-US']}
                         </h5>
                         {/* <p style={{ paddingTop: '20px' }}>{props.product.description}</p> */}
-                        <p>{displayPrice(props.product.masterData.current.masterVariant.prices[0]?.value)}</p>
+                        <p>{displayPrice(props.product.masterData.current.masterVariant.prices[0].value)}</p>
                     </div>
                 </div>
             </div>
@@ -91,10 +91,10 @@ export default function ProductCard(props) {
                 <Modal.Body>
                     <div className="row">
                         <div className="col-5">
-                            <Carousel id={'modal_' + props.product.id} images={[props.product.masterData.current.masterVariant.images[0]?.url]}/>
+                            <Carousel id={'modal_' + props.product.id} images={[props.product.masterData.current.masterVariant.images[0].url]}/>
                         </div>
                         <div className="col-5">
-                            <p>{props.product.masterData.current.description['en-US']}</p>
+                            {/* <p>{props.product.masterData.current.description['en-US']}</p> */}
                         </div>
                     </div>
                 </Modal.Body>

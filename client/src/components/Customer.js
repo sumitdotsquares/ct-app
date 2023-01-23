@@ -45,7 +45,7 @@ export default function Customer(props) {
     }
 
     const checkCustomerExists = (e) => {
-        fetch("/customer/" + e.target.value)
+        fetch(process.env.REACT_APP_BASE_URL + "/customer/" + e.target.value)
             .then(res => res.json())
             .then(data => {
                 props.setCustId(data.id);
@@ -59,7 +59,7 @@ export default function Customer(props) {
     }
 
     const addCustomerToCart = async (customerId) => {
-        fetch("/cart/customer", {
+        fetch(process.env.REACT_APP_BASE_URL + "/cart/customer", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -78,7 +78,7 @@ export default function Customer(props) {
     const createCustomer = async (e) => {
         e.preventDefault();
         setLoading(true);
-        fetch("/customer", {
+        fetch(process.env.REACT_APP_BASE_URL + "/customer", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

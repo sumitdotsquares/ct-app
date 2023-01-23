@@ -61,7 +61,7 @@ export default function CheckoutUPE(props) {
 
     // Create the PI when the customer ID is obtained
     useEffect(() => {
-        fetch("/create-payment-intent", {
+        fetch(process.env.REACT_APP_BASE_URL + "/create-payment-intent", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
