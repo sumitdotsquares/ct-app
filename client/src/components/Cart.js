@@ -25,7 +25,7 @@ export default function Cart(props) {
       currency: props.currency,
     });
   };
-  console.log("props.cart", props);
+  
   return (
     <>
       <h4 style={styles.header}>Your Cart</h4>
