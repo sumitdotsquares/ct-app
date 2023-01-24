@@ -82,13 +82,13 @@ export default function Header(props) {
                 <option value="eur">€</option>
                 <option value="gbp">£</option>
               </select>
-              {/* <Link
+              <Link
                 to="/checkout"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <FontAwesomeIcon icon={faShoppingCart} />{" "}
-                {props.cart.lineItems.length ? props.cart.lineItems.length : 0}
-              </Link> */}
+                {props.cart ? props.cart.lineItems.length : 0}
+              </Link>
             </div>
           )}
         </div>

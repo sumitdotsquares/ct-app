@@ -13,7 +13,7 @@ import Cart from "./components/Cart";
 const promise = loadStripe(process.env.REACT_APP_PK);
 
 export default function App() {
-  const [cart, setCart] = useState();
+  const [cart, setCart] = useState([]);
   const [brandColor, setBrandColor] = useState("#425466");
   const [currency, setCurrency] = useState("eur");
 
