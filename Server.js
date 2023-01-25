@@ -358,8 +358,17 @@ app.post("/events", async (req, res) => {
 });
 
 /* ------ Get Super Pay Offer ------ */
-app.get("/super-pay", async (req, res) => {
-  const ctProducts = await superPay.getOffer()
+app.post("/super-pay", async (req, res) => {
+  const cartId = req.body.cartId;
+  const lineItem = req.body.lineItem;
+  const ctProducts = await superPay.getOffer(cartId, lineItem);
+  res.send(ctProducts);
+});
+
+/* ------ Get Super Pay cashbackOfferId ------ */
+app.post("/super-cashback", async (req, res) => {
+  const cashbackOfferId = req.body.cartId;
+  const ctProducts = await superPay.getPaymentLink(cashbackOfferId);
   res.send(ctProducts);
 });
 

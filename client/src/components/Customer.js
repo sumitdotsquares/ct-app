@@ -48,7 +48,6 @@ export default function Customer(props) {
   };
 
   const checkCustomerExists = (e) => {
-    console.log("Sumit 01", e.target.value);
     fetch(process.env.REACT_APP_BASE_URL + "/customer/", {
       method: "POST",
       headers: {
@@ -60,7 +59,6 @@ export default function Customer(props) {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("Sumit 02", data);
         props.setCustId(data.id);
         data.id && addCustomerToCart(data.id);
         setCustExists(data.id !== "");
