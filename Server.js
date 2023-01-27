@@ -26,7 +26,6 @@ const PORT = process.env.REACT_APP_PORT;
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const stripe = new Stripe(STRIPE_KEY);
-console.log("Sumit", stripe);
 
 /* ------ SETUP WEBHOOK ON START------ */
 const WEBHOOK_URL = BASE_URL + "/events";
@@ -160,8 +159,7 @@ app.post("/customer", async (req, res) => {
 /* ------ HOSTED CHECKOUT ------ */
 app.post("/create-checkout-session", async (req, res) => {
   const cart = req.body.cart;
-  console.log("Sumit", req);
-
+  
   const ctCustomerId = req.body.customer;
   const ctCustomer = await commerceTools.getCustomer(ctCustomerId);
   const currency = req.body.currency;
